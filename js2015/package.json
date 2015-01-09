@@ -1,0 +1,8 @@
+{
+  "jspm": {
+    "dependencies": {
+      "bootstrap": "^3.3.1",
+      "jsonp": "npm:jsonp@^0.1.0"
+    }
+  }
+}
