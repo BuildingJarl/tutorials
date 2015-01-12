@@ -4,6 +4,7 @@
       "lib": "app"
     },
     "dependencies": {
+      "d3": "^3.5.3",
       "stats.js": "github:mrdoob/stats.js@master",
       "three.js": "github:mrdoob/three.js@master"
     }

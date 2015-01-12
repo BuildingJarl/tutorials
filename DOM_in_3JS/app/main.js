@@ -1,9 +1,11 @@
-import THREE from 'three.js/build/three';
-import Stats from 'stats.js/build/stats.min';
 import Three from './Three';
+import CirclePackLayout from './CirclePackLayout';
+import GetData from './Data';
 
-var three = new Three();
-three.init();
+var three = new Three(document);
+
+//console.log(GetData());
+//var circlePackLayout = new CirclePackLayout();
 
 (function animate() {
 	requestAnimationFrame(animate);

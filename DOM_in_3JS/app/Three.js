@@ -1,9 +1,9 @@
 import THREE from 'three.js/build/three';
 import Stats from 'stats.js/build/stats.min';
 
-class Three {
+export default class Three {
 
-	init() {
+	constructor(doc) {
 
 		this.scene;
 		this.renderer;
@@ -14,10 +14,11 @@ class Three {
 		var width = window.innerWidth;
 		var height = window.innerHeight;
 
-		this.renderer = new THREE.WebGLRenderer({ antialias:true });
+		this.renderer = new THREE.WebGLRenderer({ antialias:true, alpha: true });
 		this.renderer.setSize(width,height);
+		this.renderer.setClearColor(0x373737, 1);
 
-		document.body.appendChild(this.renderer.domElement);
+		doc.body.appendChild(this.renderer.domElement);
 
 		this.camera = new THREE.PerspectiveCamera(45,width/height,0.1,10000);
 		this.camera.position.set(0,0,10);
@@ -28,8 +29,7 @@ class Three {
 		this.stats.domElement.style.left = '0px';
 		this.stats.domElement.style.top = '0px';
 
-		document.body.appendChild( this.stats.domElement );
-
+		doc.body.appendChild( this.stats.domElement );
 	}
 
 	update() {
@@ -38,5 +38,3 @@ class Three {
 		this.stats.update();
 	}
 }
-
-export default Three;
