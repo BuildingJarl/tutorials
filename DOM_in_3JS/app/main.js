@@ -9,17 +9,14 @@ import FFFF from './FFFF';
 var three = new Three(document);
 
 var ffff = new FFFF();
-
-console.log(ffff.update)
-
-three.toUpdate.push(ffff.update);
+three.toUpdate.push(ffff.userData.update);
 three.scene.add(ffff);
-
 
 (function animate() {
 	requestAnimationFrame(animate);
 
 	three.update();
 })();
+
 
 export default {}

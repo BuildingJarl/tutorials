@@ -22,7 +22,7 @@ export default class Three {
 		doc.body.appendChild(this.renderer.domElement);
 
 		this.camera = new THREE.PerspectiveCamera(45,width/height,0.1,10000);
-		this.camera.position.set(0,0,300);
+		this.camera.position.set(0,0,500);
 		this.scene.add(this.camera);
 
 		this.stats = new Stats();
@@ -40,7 +40,10 @@ export default class Three {
 		this.renderer.render(this.scene,this.camera);
 		this.stats.update();
         
-        console.log(this.toUpdate);
+        //console.log(this.toUpdate);
+        this.toUpdate.map(function(element){
+        	element();
+        });
 	}
 
 	addToScene(obj) {

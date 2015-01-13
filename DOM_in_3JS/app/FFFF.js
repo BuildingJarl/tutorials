@@ -36,7 +36,7 @@ export default class FFFF {
 			});
 
 
-			var radius = 200;
+			var radius = 500;
 
 			var geometry = new THREE.BufferGeometry();
 
@@ -68,11 +68,11 @@ export default class FFFF {
 
 			particleSystem = new THREE.PointCloud( geometry, shaderMaterial );
         
-            this.update = function render() {
+            particleSystem.userData.update = function render() {
 
-                var time = Date.now() * 0.005;
+                var time = Date.now() * 0.001;
 
-                particleSystem.rotation.z = 0.01 * time;
+                particleSystem.rotation.y = 0.01 * time;
 
                 var size = geometry.attributes.size.array;
 
