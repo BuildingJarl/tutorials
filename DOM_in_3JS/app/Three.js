@@ -37,4 +37,8 @@ export default class Three {
 		this.renderer.render(this.scene,this.camera);
 		this.stats.update();
 	}
+
+	addToScene(obj) {
+		this.scene.add(obj);
+	}
 }
