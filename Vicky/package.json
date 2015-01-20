@@ -1,0 +1,11 @@
+{
+  "jspm": {
+    "directories": {
+      "lib": "app"
+    },
+    "dependencies": {
+      "stats.js": "github:mrdoob/stats.js@master",
+      "three.js": "github:mrdoob/three.js@master"
+    }
+  }
+}
