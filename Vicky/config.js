@@ -9,6 +9,8 @@ System.config({
 System.config({
   "map": {
     "stats.js": "github:mrdoob/stats.js@master",
-    "three.js": "github:mrdoob/three.js@master"
+    "three.js": "github:mrdoob/three.js@master",
+    "threex.text": "github:jeromeetienne/threex.text@master"
   }
 });
+
