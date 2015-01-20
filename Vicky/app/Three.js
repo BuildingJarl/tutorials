@@ -30,6 +30,18 @@ export default class Three {
 		this.stats.domElement.style.top = '0px';
 
 		doc.body.appendChild( this.stats.domElement );
+
+		//var ambientLight = new THREE.AmbientLight(0xffffff);
+      	//this.scene.add(ambientLight);
+
+      	var light1 = new THREE.PointLight( 0xffffff, 1, 100 );
+		light1.position.set( -5, -5, 2 );
+		this.scene.add( light1 );
+	
+		var light2 = new THREE.PointLight( 0xffffff, 1, 100 );
+		light2.position.set( 5, 5, 2 );
+		this.scene.add( light2 );
+
 	}
 
 	update() {

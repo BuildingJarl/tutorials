@@ -28,7 +28,9 @@ export default class Text {
     
 
     // create a mesh with it
-    var material	= new THREE.MeshNormalMaterial()
+    //var material	= new THREE.MeshNormalMaterial()
+
+    var material = new THREE.MeshPhongMaterial({ color: 0x83F52C }); 
     var mesh	= new THREE.Mesh(geometry, material)
     // return mesh
     return mesh
