@@ -10,6 +10,7 @@ export default class Three {
 		this.renderer;
 		this.camera;
 		this.stats;
+		this.toUpdate = [];
 
 
 		this.scene = new THREE.Scene();
@@ -50,6 +51,11 @@ export default class Three {
 
 		this.renderer.render(this.scene,this.camera);
 		this.stats.update();
+
+		 //console.log(this.toUpdate);
+        this.toUpdate.map(function(element){
+        	element();
+        });
 	}
 
 	addToScene(obj) {

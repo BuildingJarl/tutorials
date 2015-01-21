@@ -25,8 +25,10 @@ three.addToScene(text1);
 three.addToScene(text2);
 three.addToScene(text3);
 
-var ff = new FF();
-three.addToScene(ff);
+
+var ffff = new FF();
+three.toUpdate.push(ffff.userData.update);
+three.scene.add(ffff);
 
 //start animation
 (function animate() {
