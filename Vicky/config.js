@@ -8,8 +8,8 @@ System.config({
 
 System.config({
   "map": {
-    "stats.js": "github:mrdoob/stats.js@master",
-    "three.js": "github:mrdoob/three.js@master"
+    "THREE": "github:mrdoob/three.js@master/build/three",
+    "Stats": "github:mrdoob/stats.js@master/build/stats.min"
   }
 });
 

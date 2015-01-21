@@ -1,4 +1,4 @@
-import THREE from 'three.js/build/three';
+import THREE from 'THREE';
 import droid_serif_bold from '../fonts/droid/droid_serif_bold.typeface'
 
 export default class Text {

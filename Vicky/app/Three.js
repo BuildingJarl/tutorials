@@ -1,5 +1,6 @@
-import THREE from 'three.js/build/three';
-import Stats from 'stats.js/build/stats.min';
+import THREE from 'THREE';
+//import OrbitControls from 'THREE.OrbitControls';
+import Stats from 'Stats';
 
 export default class Three {
 
@@ -9,6 +10,7 @@ export default class Three {
 		this.renderer;
 		this.camera;
 		this.stats;
+
 
 		this.scene = new THREE.Scene();
 		var width = window.innerWidth;
