@@ -1,6 +1,6 @@
 import Three from './Three';
 import ThreeText from './Text';
-
+import FF from './FFFF';
 
 var three = new Three(document);
 
@@ -24,6 +24,9 @@ text3.position.set(0,-2,0);
 three.addToScene(text1);
 three.addToScene(text2);
 three.addToScene(text3);
+
+var ff = new FF();
+three.addToScene(ff);
 
 //start animation
 (function animate() {

@@ -1,4 +1,4 @@
-import THREE from 'three.js/build/three';
+import THREE from 'THREE';
 
 export default class FFFF {
 
